@@ -1,0 +1,22 @@
+@import "../../../styles//variables";
+@import "../../../styles//screensize";
+
+.container {
+  position: fixed;
+  z-index: 2;
+  bottom: 50px;
+  right: 100px;
+  .inner_container {
+    background-color: $primaryColor;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+}

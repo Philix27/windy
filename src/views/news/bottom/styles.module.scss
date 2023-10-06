@@ -1,0 +1,25 @@
+@import "../../../styles//variables";
+@import "../../../styles//screensize";
+
+.container {
+  display: none;
+  @include mobileSS {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .inner_container {
+    height: 50px;
+    background-color: $background2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      margin: 0 20px;
+    }
+  }
+}

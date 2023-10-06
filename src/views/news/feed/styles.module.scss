@@ -1,0 +1,100 @@
+@import "../../../styles//variables";
+@import "../../../styles//screensize";
+
+.container {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  .inner_container {
+    width: 100%;
+    display: flex;
+    padding: 20px 20px;
+    height: 100%;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    // background-color: aqua;
+    .sidebar1_container {
+      width: 25%;
+      height: 80vh;
+      border-radius: 10px;
+      margin-top: 10px;
+      background-color: $background3;
+    }
+    .feed_container {
+      margin: 0 20px;
+      width: 50%;
+      overflow-y: auto;
+      box-sizing: content-box;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none;
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .sidebar2_container {
+      width: 25%;
+      height: 500px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background-color: $lightgrey;
+    }
+  }
+}
+
+.post_card {
+  background-color: $background3;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 100%;
+  padding: 20px 20px;
+  border: $lightgrey solid 0.5px;
+  .top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .username {
+      font-size: small;
+    }
+    .time {
+      font-size: x-small;
+    }
+  }
+  hr {
+    margin: 10px 0px;
+    border: solid $primaryColor 0.3px;
+  }
+
+  .content {
+    h3 {
+      font-size: medium;
+      font-size: medium;
+    }
+    p {
+      font-size: small;
+      font-weight: 300;
+      line-height: 20px;
+    }
+  }
+  .form_element {
+    padding-top: 20px;
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: $background1;
+      color: #fff;
+      outline: none;
+      outline-style: none;
+      border: none;
+    }
+  }
+}

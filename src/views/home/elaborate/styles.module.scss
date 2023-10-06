@@ -1,0 +1,64 @@
+@import "../../../styles//variables";
+@import "../../../styles//screensize";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .inner_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 50px 50px;
+    margin: 50px 0px;
+    border-radius: 20px;
+    background-color: $background3;
+    @include mobileSS {
+      width: 90%;
+      flex-direction: column;
+      padding: 20px;
+      margin: 20px 0px;
+    }
+    .text_content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      justify-content: space-between;
+      @include mobileSS {
+        width: 100%;
+      }
+      h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 100;
+        padding-bottom: 40px;
+      }
+    }
+    .image_section {
+      width: 50%;
+      // height: 100%;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      padding-left: 100px;
+      @include mobileSS {
+        width: 100%;
+        padding-left: 0px;
+      }
+      img {
+        height: 400px;
+        width: auto;
+        object-fit: fill;
+        @include mobileSS {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

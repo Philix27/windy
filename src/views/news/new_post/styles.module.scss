@@ -1,0 +1,39 @@
+@import "../../../styles//variables";
+@import "../../../styles//screensize";
+
+.container {
+  padding-top: 20px;
+  width: 100%;
+  font-family: "Inter";
+  .inner_container {
+    textarea {
+      min-width: 100%;
+      max-width: 100%;
+      border: none;
+      padding: 15px;
+      background-color: $background1;
+      color: #fff;
+      outline: none;
+      font-size: large;
+      border: solid 0.5px $lightgrey;
+      border-radius: 10px;
+      min-height: 80px;
+      max-height: 120px;
+    }
+    button {
+      min-width: 100%;
+      margin-top: 10px;
+      padding: 15px 35px;
+      border-style: none;
+      border-radius: 5px;
+      background-color: $primaryColor;
+      border: 1px solid $primaryColor;
+      color: #fff;
+      &:hover {
+        color: #fff;
+        background-color: $background1;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
